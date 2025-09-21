@@ -11,10 +11,20 @@ public class UIManager : MonoBehaviour
     {
         UpdateUI();
     }
+
+    private void Update()
+    {
+        UpdateUI();
+    }
     public void UpdateUI()
     {
-        _bitsTotalText.text = $"Bits: {GameManager.Instance.Bits}";
-        _BPSText.text = $"BPS: {GameManager.Instance.BitsPerSecond}";
-        _BPCText.text = $"BPC: {GameManager.Instance.BitsPerClick}";
+        if (GameManager.Instance != null)
+        {
+            _bitsTotalText.text = $"Bits: {GameManager.Instance.Bits}";
+            _BPSText.text = $"BPS: {GameManager.Instance.BitsPerSecond}";
+            _BPCText.text = $"BPC: {GameManager.Instance.BitsPerClick}";
+        }
+        else        
+            Debug.LogWarning("GameManager.Instance is null!");
     }
 }

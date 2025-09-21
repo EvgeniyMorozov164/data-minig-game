@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    [SerializeField] private ulong _bits = 0;
-    [SerializeField] private ulong _BPS = 0;
+    [SerializeField] private ulong _bits;
+    [SerializeField] private ulong _BPS;
     [SerializeField] private ulong _BPC = 1;
 
     public ulong Bits => _bits;
@@ -36,5 +36,10 @@ public class GameManager : MonoBehaviour
     public void AddBPC(ulong value)
     {
         _BPC += value;
+    }
+
+    public void Click()
+    {
+        _bits += _BPC;
     }
 }
