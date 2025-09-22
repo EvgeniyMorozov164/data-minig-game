@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
 
     public static GameManager Instance;
 
+    private float _timer = 0f;
     private void Awake()
     {
         if (Instance == null)
@@ -23,6 +24,15 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
     }
 
+    private void Update()
+    {
+        _timer += Time.deltaTime;
+        if (_timer >= 1f)
+        {
+            _timer = 0;
+            AddBitsPerSecond();
+        }
+    }
     public void AddBits(ulong value)
     {
         _bits += value;
@@ -41,5 +51,15 @@ public class GameManager : MonoBehaviour
     public void Click()
     {
         _bits += _BPC;
+    }
+
+    private void AddBitsPerSecond()
+    {
+        if (_BPS > 0)
+        {
+            _bits += _BPS;
+            if (UIManager.Instance != null)
+                UIManager.Instance.UpdateUI();
+        }
     }
 }
