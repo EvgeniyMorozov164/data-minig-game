@@ -62,4 +62,19 @@ public class GameManager : MonoBehaviour
                 UIManager.Instance.UpdateUI();
         }
     }
+
+    public bool SubtractBits(ulong value)
+    {
+        if (value > _bits)
+        {
+            Debug.Log($"Недостаточно битов: нужно {value}, есть {_bits}");
+        }
+        
+        _bits -= value;
+        Debug.Log($"Списано {value} битов, осталось {_bits}");
+        if (UIManager.Instance != null)
+            UIManager.Instance.UpdateUI();
+
+        return true;
+    }
 }
