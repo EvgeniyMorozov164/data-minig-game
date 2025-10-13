@@ -59,4 +59,10 @@ public class ShopItem
     {
         _currentCost = _baseCost;
     }
+
+    public void SetLoadedData(uint loadedAmount, ulong loadedCurrentCost)
+    {
+        _amount = loadedAmount;
+        _currentCost = loadedCurrentCost;
+    }
 }
