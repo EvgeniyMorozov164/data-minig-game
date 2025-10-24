@@ -1,0 +1,36 @@
+{
+    "intExample": 5,
+    "strExample": "Hello!",
+    "boolExample": [
+        false,
+        false,
+        false,
+        false
+    ],
+    "idSave": 393,
+    "bits": 471,
+    "BPS": 98,
+    "BPC": 63,
+    "shopItemsData": [
+        {
+            "itemIndex": 1,
+            "amount": 27,
+            "currentCost": 696
+        },
+        {
+            "itemIndex": 0,
+            "amount": 13,
+            "currentCost": 49
+        },
+        {
+            "itemIndex": 2,
+            "amount": 17,
+            "currentCost": 1377
+        },
+        {
+            "itemIndex": 3,
+            "amount": 5,
+            "currentCost": 514
+        }
+    ]
+}
