@@ -7,30 +7,30 @@
         false,
         false
     ],
-    "idSave": 766,
-    "bits": 4561,
-    "BPS": 188,
-    "BPC": 108,
+    "idSave": 1349,
+    "bits": 997,
+    "BPS": 222,
+    "BPC": 200,
     "shopItemsData": [
         {
             "itemIndex": 1,
-            "amount": 30,
-            "currentCost": 1059
+            "amount": 38,
+            "currentCost": 3240
         },
         {
             "itemIndex": 0,
-            "amount": 48,
-            "currentCost": 6555
+            "amount": 52,
+            "currentCost": 11465
         },
         {
             "itemIndex": 2,
-            "amount": 28,
-            "currentCost": 6408
+            "amount": 34,
+            "currentCost": 14823
         },
         {
             "itemIndex": 3,
-            "amount": 11,
-            "currentCost": 1191
+            "amount": 23,
+            "currentCost": 6372
         }
     ]
 }
